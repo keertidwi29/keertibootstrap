@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>icoder</title>
+</head>
+
+<body>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">icoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tech.html">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+        </div>
+      </div>
+  </nav>
+  <!--login modal-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">coder login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <body class="text-center">
+
+            <main class="form-signin">
+              <form>
+                <img src="image/i.jpg">
+                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div><br>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+              </form>
+            </main>
+
+          </body>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--signup modal-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Coder signup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <body class="text-center">
+
+            <main class="form-signin">
+              <form>
+                <img src="https://source.unsplash.com/72x57/?code,python">
+                <h1 class="h3 mb-3 fw-normal">Please signup</h1>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                  <label for="floatingInput">Name</label>
+                  <div><br>
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div><br>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div><br>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="confirm Password">
+                      <label for="cfloatingPassword">Confirm Password</label>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Signup</button>
+                    <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+              </form>
+            </main>
+
+          </body>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--slider-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/slider1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to coder</h2>
+          <p>Technology, News, Trends</p>
+          <button type="button" class="btn btn-success btn-sm">Technology</button>
+          <button type="button" class="btn btn-primary btn-sm">Web Development</button>
+          <button type="button" class="btn btn-danger btn-sm">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to coder</h2>
+          <p>Technology, News, Trends</p>
+          <button type="button" class="btn btn-success btn-sm">Technology</button>
+          <button type="button" class="btn btn-primary btn-sm">Web Development</button>
+          <button type="button" class="btn btn-danger btn-sm">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to coder</h2>
+          <p>Technology, News, Trends</p>
+          <button type="button" class="btn btn-success btn-sm">Technology</button>
+          <button type="button" class="btn btn-primary btn-sm">Web Development</button>
+          <button type="button" class="btn btn-danger btn-sm">Tech fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--content-->
+
+
+  <div class="container my-4">
+
+    <h2>Web Desining & Development </h2>Web design encompasses many different skills
+     and disciplines in the production and maintenance of websites. The different areas of web
+      design include web graphic design; user interface design; authoring, including standardised 
+      code and proprietary software; user experience design; and search engine optimization.</p>
+      Web development is the work involved in developing a Web site for
+      the Internet or an intranet. Web development can range from developing a simple single static
+       page of plain text to complex web applications, electronic businesses, and social network 
+       services.</p><br>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Develop </strong>
+            <h3 class="mb-0">Web Developer</h3>
+            <p class="card-text mb-auto">Web development has also impacted personal networking and marketing. 
+              Web sites are no longer simply tools for work or for commerce, but serve more broadly for
+               communication and social networking. </p>
+            <!--<a href="#" class="stretched-link">Continue reading</a>-->
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="image/s1.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Web Designer</h3>
+            <p class="mb-auto">Website designers may consider it to be good practice to conform to standards. 
+              This is usually done via a description specifying what the element is doing. 
+              Failure to conform to standards.</p>
+           <!-- <a href="#" class="stretched-link">Continue reading</a>-->
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="image/s2.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <article class="blog-post">
+        
+        <h3>Technology</h3>
+        <p>Web development comes with a huge set of rules and techniques every website developer should know about.
+           If you want a website to look and function as you wish them to, you need to get familiar with web 
+           technologies that will help you achieve your goal. Developing an app or a website typically comes
+            down to knowing 3 main languages: JavaScript, CSS, and HTML. And while it sounds quite complicated,
+             once you know what you are doing, 
+          understanding web technology and the way it works becomes significantly easier.</p>
+
+      </article>
+
+    </div>
+
+
+
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="image/html.jpg">
+          <div class="card-body">
+            <h3>Html & Css</h3>
+            <p class="card-text">HTML is one of the first you should learn. Thanks to HTML,
+               the web browsers know what to show once they receive the request. 
+              If you want to better understand how HTML works, you also need to know what CSS is.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="image/javascript.jpg">
+
+          <div class="card-body">
+            <h3>Javascript</h3>
+            <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that conforms to the 
+              ECMAScript specification.
+               JavaScript is high-level, often just-in-time compiled, and multi-paradigm.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="image/php.jpg">
+          <div class="card-body">
+            <h3>Php</h3>
+            <p class="card-text">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+            PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--footer-->
+  <footer class="py-3 my-4 bg-dark">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+
+
+</body>
+
+</html>
